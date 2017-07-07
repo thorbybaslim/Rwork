@@ -111,7 +111,14 @@ runAnal <- function(sources=NULL,sub=NULL,sort=TRUE,stop=TRUE,echo=FALSE) {
         else {
             cat("\tLoading analysis file",lista)
 	    if (!missing(sub)) {
-		cat("\t running sub-part ",sub2run," (if existant...)\n")
+		x <- readLines(trunk(paste('analysis/',lista,sep='')))
+		is.sub.in <- grep(paste("wrap\\(\\'",sub2run,"\\'",sep=''),x,perl=TRUE)
+		if (length(is.sub.in) > 0)
+			cat("\t running sub-part ",sub2run,"\n")
+		else 
+			stop(paste("sub ",sub2run," not found in ",lista,".",sep=''))
+
+
 	    }
 	    cat("\n")
             source(trunk(paste('analysis/',lista,sep='')),echo=echo)
