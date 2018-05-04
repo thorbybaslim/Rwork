@@ -13,9 +13,14 @@ R scripts for reproducible analysis
 2. Step (2) Then clone this repo into a working dir inside a git-versioned repo:
 
 ```bash
-	git clone https://github.com/FernandoHRosa/Rwork.git && rm -rf Rwork/.git
+	git clone https://github.com/FernandoHRosa/Rwork.git && rm -rf Rwork/.git  (for BASH)
 
 ```
+```fish
+	git clone https://github.com/FernandoHRosa/Rwork.git; and rm -rf Rwork/.git (fish)
+```
+
+
 
 3. Step (3) Walk into Rwork,r-work, create a 001 (002, 003, 00n, whatever) folder cwd into R
 	start R from it, and then 
