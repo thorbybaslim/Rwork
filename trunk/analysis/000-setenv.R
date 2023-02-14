@@ -86,7 +86,7 @@ init.setrenv <- function(force=TRUE,figureout=TRUE) {
 
 cat("Setting up Rwork environemnt\n")
 
-init.setrenv(options()$CEA.FORCE,options()$CEA.FIGUREOUT)
+init.setrenv(TRUE,TRUE)
 
 local({
 	ajusta.ambiente.src <- paste(.TRUNK,'/progs/','setenv.R',sep='')
