@@ -1,6 +1,9 @@
 # Rwork
 R scripts for reproducible analysis
 
+Testing commit
+
+
 ## Environment setup
 
 1. Step (1) Remember to edit ou append your .Rprofile with the following:
